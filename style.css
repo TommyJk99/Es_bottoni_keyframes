@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    box-sizing: border-box;
+}
+
+.marginB{
+    margin-bottom: 3rem;
+}
+/*BOTTONE 1*/
+.bottone1{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.bottone1 span{
+    background-color: blueviolet;
+    color: white;
+    font-weight: bolder;
+    padding: 1rem 1rem;
+    border-radius: 20px;
+}
+
+.bottone1:hover span{
+    animation: button1 5000ms linear; 
+    animation-iteration-count: infinite;
+    cursor: none;
+}
+
+
+@keyframes button1{
+    0% {border: 4px solid rgb(251, 37, 255);}
+    20% {border: 4px solid rgb(255, 31, 69);}
+    40% {border: 4px solid rgb(255, 162, 22);}
+    60% {border: 4px solid rgb(206, 255, 45);}
+    80% {border: 4px solid rgb(49, 238, 255);}
+    100% {border: 4px solid rgb(251, 37, 255);}
+}
+
+
+/*BOTTONE 2*/
+.bottone2{
+    display: flex;
+    justify-content: center;
+}
+.bottone2 span{
+    background-color: rgb(255, 0, 43);
+    color: white;
+    border: 4px solid white;
+    font-weight: bolder;
+    padding: 1rem 1rem;
+}
+.bottone2:hover span{
+    animation: button2 300ms linear; 
+    animation-iteration-count: infinite;
+    cursor: none;
+}
+
+@keyframes button2{
+    0% {
+        border-top: 4px solid rgb(64, 255, 0);
+        border-bottom: 4px solid rgb(62, 37, 255);
+        border-left: 4px solid rgb(64, 255, 0);
+        border-right: 4px solid rgb(62, 37, 255);
+
+    }
+    100% {  
+        border-top: 4px solid rgb(62, 37, 255);
+        border-bottom: 4px solid rgb(64, 255, 0);
+        border-right: 4px solid rgb(64, 255, 0);
+        border-left: 4px solid rgb(62, 37, 255);
+    }
+   
+}
+
+
+
+
